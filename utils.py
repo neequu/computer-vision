@@ -3,7 +3,6 @@ from tabulate import tabulate
 
 def get_yolo_metrics():
     """Get YOLO metrics using built-in validation"""
-    print("🚀 Running YOLOv8 Validation...")
     model = YOLO("yolov8m.pt")
     results = model.val(data="coco8.yaml")
 

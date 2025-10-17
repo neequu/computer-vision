@@ -13,10 +13,6 @@ from ultralytics import YOLO
 
 from utils import COCO_LABELS, display_table, get_documented_metrics, get_yolo_metrics
 
-# pyright: ignore
-# or
-# pylint: disable-all
-
 
 def run_yolo_video(
     input_path="./test.mp4", output_path="output_yolo.mp4", confidence_threshold=0.5
